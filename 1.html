@@ -4,6 +4,15 @@
 			<title>Hello</title>
 		</head>
 		<body>
-			<h1>Hello</h1>
+			<h1 id=1>Hello</h1>
+			<label>text</label>
+			<input id=textInput><br>
+			<label>element id</label>
+			<input id=elementID><br>
+			<button onclick = changeHTML(document.getElementByID('elementID').innerHTML,document.getElementByID('textInput').innerHTML)
+			<script>
+			 function changeHTML(Id,text)
+				document.getElementByID(Id).innerHTML = text	
+			</script>	
 		</body>
 	</html>
