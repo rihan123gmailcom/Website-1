@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>Change Element</title>
-			<link rel stylesheet = https://rihan123gmailcom.github.io/Website-1/1.css> 
+			<title>Hello</title>
+			<link rel="stylesheet" type="text/css" href="1.css">
 		</head>
 		<body>
 			<h1 id=1>Hello</h1>
 			<br>
-			<header id=2>Change Element Text</header><br>
-			<h1 id=3>hello</h1>
+			<header id=2>Change Element Text</header>
 			<!-- Change the text of an element-->
 			<label>Text</label>
 			<input id=textInput><br>
 			<label>Element ID</label>
 			<input id=elementID><br>
-			<script>
-			 function changeHTML(Id, text) {
+			<script src="1.js"></script>	
+			<button onclick="changeHTML(document.getElementById('elementID').value, document.getElementById('textInput').value)">Submit</button>
+		</body>
+	</html>
 				document.getElementById(Id).innerHTML = text;
 				}
 			</script>	
